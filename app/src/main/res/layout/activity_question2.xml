@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".QuestionActivity2">
+
+    <TextView
+        android:id="@+id/enter_your_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="ENTER YOUR ANSWER"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="TextView" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="5"
+            android:minHeight="50dp"
+            style="?android:progressBarStyleHorizontal"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/opt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option1"
+        android:background="@drawable/question_option"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:onClick="answerChosen"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/opt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option1"
+        android:background="@drawable/question_option"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:onClick="answerChosen"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/opt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option1"
+        android:background="@drawable/question_option"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:onClick="answerChosen"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/opt_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option1"
+        android:background="@drawable/question_option"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:onClick="answerChosen"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/go_to_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Go to next"
+        android:onClick="goToNext"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>
